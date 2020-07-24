@@ -1,0 +1,120 @@
+.docs-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 760px) {
+  .docs-content-container{
+    flex-direction: column;
+  }
+}
+
+.docs-sidebar {
+  min-width: 20vw;
+}
+
+.docs-content {
+  flex-grow: 1;
+  overflow-x: auto;
+  /* max-width: 80vw; */
+}
+
+h1, h2, h3 {
+  font-family: "Futura";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 70%;
+  padding-top: 5px;
+  border-bottom: 1px solid #888888;
+}
+
+p {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 18px;
+}
+
+li {
+  font-family: "Futura Light";
+  font-size: 16px;
+}
+
+.section-title {
+  margin-top: 30vh;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 5px;
+  border-bottom: 2px solid #888888;
+}
+
+article li {
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.question {
+  margin-top: 4rem;
+  display: block;
+  padding: 0.2rem;
+  width: 25%;
+  background-color: chartreuse;
+  border-radius: 0 7px 7px 0;
+}
+
+.first-question {
+  display: block;
+  padding: 0.2rem;
+  width: 25%;
+  background-color: chartreuse;
+  border-radius: 0 7px 7px 0;
+}
+
+/* wrap text in code blocks */
+pre {
+  /* css-3 */
+  /* white-space: pre-wrap; */
+  /* Mozilla, since 1999 */
+  /* white-space: -moz-pre- wrap; */
+  /* Internet Explorer 5.5+ */
+  /* word-wrap: break-word; */
+}
+
+blockquote {
+  color: #999;
+  border-left: .2rem solid #dfe2e5;
+  margin: 2rem 0 1rem 0;
+  padding: 0.25rem 0rem 0.25rem 1rem;
+}
+
+
+article a {
+  font-weight: 400;
+}
