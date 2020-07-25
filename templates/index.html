@@ -7,10 +7,10 @@
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
       <title>Learn Bitcoin Testnet</title>
-      <link rel="icon" sizes="16x16" href="/images/favicon.ico">
-      <link rel="stylesheet" type="text/css" href="/css/fonts.css">
-      <link rel="stylesheet" type="text/css" href="/css/styles.css">
-      <link rel="stylesheet" type="text/css" href="/css/extra.css">
+      <!-- <link rel="icon" sizes="16x16" href="images/favicon.ico"> -->
+      <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/fonts.css") | safe }}">
+      <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/styles.css") | safe }}">
+      <link rel="stylesheet" type="text/css" href="{{ get_url(path="css/extra.css") | safe }}">
     </head>
 
     <body>
@@ -72,7 +72,7 @@
         </main>
       </div>
 
-      <script type="text/javascript" src="/js/themes.js"></script>
+      <script type="text/javascript" src="{{ get_url(path="js/themes.js") | safe }}"></script>
 
       <script>
         function burger() {

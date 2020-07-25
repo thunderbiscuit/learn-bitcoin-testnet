@@ -9,7 +9,7 @@ weight = 2
 Here is a mental model of what is typically happening with a node and how you can interact with it:
 
 <center>
-  <img src="/images/overview/bitcoin-node.png" style="width: 50vw; border: 2px solid #888888; border-radius: 8px;"/>
+  <img src="/learn-bitcoin-testnet/images/overview/bitcoin-node.png"" style="width: 50vw; border: 2px solid #888888; border-radius: 8px;"/>
 </center>
 
 ## 1. The bitcoin daemon

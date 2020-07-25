@@ -133,3 +133,7 @@ article a {
 strong {
   font-weight: 700;
 }
+
+article img {
+  margin: 2rem 0;
+}

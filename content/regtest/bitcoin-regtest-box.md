@@ -13,8 +13,10 @@ weight = 1
 ## Architecture
 
 <center>
-  <img src="/images/regtest/bitcoin-regtest-box.png" style="width: 50vw; border: 2px solid #888888; border-radius: 8px;"/>
+  <img src="/learn-bitcoin-testnet/images/regtest/bitcoin-regtest-box.png" style="width: 50vw; border: 2px solid #888888; border-radius: 8px;"/>
 </center>
+
+The docker image created by docker is used to generate two node containers, together creating the regtest network.
 
 ## Requirements
 
