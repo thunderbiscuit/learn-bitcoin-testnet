@@ -32,7 +32,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -51,9 +51,11 @@ h2::after {
 }
 
 p {
-  font-family: "Source Sans Pro";
+  /* font-family: "Source Sans Pro"; */
+  font-family: "Roboto";
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.7rem;
 }
 
 li {
@@ -70,6 +72,15 @@ li {
   display: block;
   margin: 0 auto;
   width: 40%;
+  padding-top: 5px;
+  border-bottom: 2px solid #888888;
+}
+
+.website-title::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 72%;
   padding-top: 5px;
   border-bottom: 2px solid #888888;
 }
@@ -117,4 +128,8 @@ blockquote {
 
 article a {
   font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
 }
