@@ -10,6 +10,8 @@ weight = 1
 **Repo:** [bitcoin-regtest-box](https://github.com/bitcoindevkit/bitcoin-regtest-box)  
 **Main Developer:** [@notmandatory](https://twitter.com/notmandatory)
 
+This page is very much a _work in progress_. Propose improvements [here](https://github.com/thunderbiscuit/learn-bitcoin-testnet).
+
 ## Architecture
 
 <center>

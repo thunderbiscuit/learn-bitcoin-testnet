@@ -10,6 +10,8 @@ weight = 2
 **Repo:** [nigiri](https://github.com/vulpemventures/nigiri)  
 **Main Developer:** [Vulpem Ventures](https://vulpem.com/)  
 
+This page is very much a _work in progress_. Propose improvements [here](https://github.com/thunderbiscuit/learn-bitcoin-testnet).
+
 ## Architecture
 
 ## Overview

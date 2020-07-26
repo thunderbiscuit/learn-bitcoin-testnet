@@ -146,3 +146,12 @@ strong {
 article img {
   margin: 2rem 0;
 }
+
+.highlight {
+  margin-top: 4rem;
+  display: block;
+  padding: 0.2rem;
+  width: 50%;
+  background-color: chartreuse;
+  border-radius: 0 7px 7px 0;
+}
