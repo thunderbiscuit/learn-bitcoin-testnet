@@ -134,6 +134,15 @@ strong {
   font-weight: 700;
 }
 
+:not(pre) > code {
+  padding: 4px 9px;
+  margin: 0 .3em;
+  border-radius: .2em;
+  background: #2b303b;
+  color: #c0c5ce;
+  vertical-align: middle;
+}
+
 article img {
   margin: 2rem 0;
 }
