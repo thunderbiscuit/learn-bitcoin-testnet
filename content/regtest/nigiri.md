@@ -60,6 +60,6 @@ nigiri logs chopsticks
 Nigiri stores the `bitcoin.conf`  by default in the `~/.nigiri` data directory folder.
 To tweak your Bitcoin node configuration:
 
-1. Edit the `.nigiri/resources/volumes/regtest/config/bitcoin.conf` file
+1. Edit the `~/.nigiri/resources/volumes/regtest/config/bitcoin.conf` file
 2. If already started, stop and delete `nigiri stop --delete`
 3. Start and mount inside the container the edited configuration file `nigiri start` 
