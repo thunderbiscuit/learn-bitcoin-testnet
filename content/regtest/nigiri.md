@@ -36,10 +36,10 @@ From there, a simple way to get started and play with the regtest in nigiri is t
 docker exec -it resources_bitcoin_1 bash
 
 # generate a new address
-bitcoin-cli -chain=regtest -rpcport=19001 -rpcuser=admin1 -rpcpassword=123 getnewaddress
+bitcoin-cli -datadir=config getnewaddress
 ```
 
-## Logs and Configuration File
+## Logs
 
 You can access the logs for all containers and services using the following commands:
 
@@ -54,4 +54,12 @@ nigiri logs electrs
 nigiri logs chopsticks
 ```
 
-A quick look at the logs will tell you that the config file for the bitoin daemon is located at `/config/regtest/`. Unfortunately the container does not come with nano or vim installed, so if you wish to change the config file you'll have find another way. You could for example: (1) ssh into the node with VScode, or (2) install nano or vim within the container (note that by default, installing a new package in a container will not persist over sessions).
+
+### Configuration File
+
+Nigiri stores the `bitcoin.conf`  by default in the `~/.nigiri` data directory folder.
+To tweak your Bitcoin node configuration:
+
+1. Edit the `~/.nigiri/resources/volumes/regtest/config/bitcoin.conf` file
+2. If already started, stop and delete `nigiri stop --delete`
+3. Start and mount inside the container the edited configuration file `nigiri start` 
