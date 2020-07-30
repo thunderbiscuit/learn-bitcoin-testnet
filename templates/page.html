@@ -27,16 +27,23 @@
   {% endfor %}
 
   {% if header_count > 4 %}
-    <h2 style="margin-top: 2rem;">Table of Contents</h2>
-    <!-- <hr style="width: 100%; color: #888888; margin: 0rem 0 0 0;"/> -->
-      <ul id="toc">
+    <h2 id="toc1" style="margin-top: 2rem;">Table of Contents</h2>
+      <ul id="toc2">
         {% for h2 in page.toc %}
-          <li><a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
-          {% if h2.children %}<ul>        
+          <li>
+            <a href="{{ h2.permalink | safe }}">
+              {{ h2.title }}
+            </a>
+          {% if h2.children %}
+          <ul>        
             {% for h3 in h2.children %}
-            <li><a href="{{ h3.permalink | safe }}">{{ h3.title }}</a></li>
+            <li>
+              <a href="{{ h3.permalink | safe }}">
+                {{ h3.title }}
+              </a>
+            </li>
           {% endfor %}
-         </ul>
+      </ul>
   {% endif %}
         </li>
   {% endfor %}

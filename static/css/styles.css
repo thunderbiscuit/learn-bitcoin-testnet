@@ -198,10 +198,10 @@ main img {
   body {
     font-size: 1rem;
   }
-  nav,
+  /* nav,
   main {
     width: 92vw;
-  }
+  } */
   #mobile {
     display: inline;
     outline: none;
@@ -214,11 +214,18 @@ main img {
   .search-results__items {
     list-style-position: inside;
   }
-  #bger,
+  /* #bger, */
   #tax_list {
     display: none;
   }
 }
+
+@media screen and (max-width: 760px) {
+  #bger {
+    display: none;
+  }
+}
+
 #search {
   width: 100%;
   padding: 1vw 0;
