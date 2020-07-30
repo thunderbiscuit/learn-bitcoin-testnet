@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://thunderbiscuit.github.io/learn-bitcoin-testnet/sitemap.xml

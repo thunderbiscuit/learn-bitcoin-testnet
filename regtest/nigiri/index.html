@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>Learn Bitcoin Testnet</title>
+      <!-- <link rel="icon" sizes="16x16" href="images/favicon.ico"> -->
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/fonts.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/styles.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/extra.css">
+    </head>
+
+    <body>
+      
+      <div class="docs-content-container">
+
+        <nav class="docs-sidebar">
+          <div id="subnav">
+            <form class="theme-selector" style="font-size: 2rem;">
+              <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9706;</button>
+              <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9705;</button>
+            </form>
+            <a href="/learn-bitcoin-testnet" style="margin-right: 1rem; font-size: 2rem;">&#8962;</a>
+            <a href="/learn-bitcoin-testnet/search" style="font-size: 2rem;">&#8981;</a>
+            <a href="javascript:void(0);" style="margin-left: 1rem; line-height: 50px;" onclick="burger()" id="mobile" style="font-size: 2rem;">&#9776;</a>
+          </div>
+          
+          
+  <ul id="breadcrumbs">
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;">Root</a>&nbsp;&#8594;&nbsp;</li>
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;regtest&#x2F;">Regtest</a>&nbsp;&#8594;&nbsp;</li>
+    
+    <li>Nigiri</li>
+    <hr style="width: 100%; color: #888888; margin: 0.2rem 0 1rem 0;"/>
+  </ul>
+
+  
+  
+
+<ul id="bger">
+  
+  
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/overview/" style="font-weight: 400; font-size: 18px;">
+        Overview
+      </a>
+    </li>
+          
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/" style="font-weight: 400; font-size: 18px;">
+        Regtest
+      </a>
+    </li>
+          
+    
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;bitcoin-regtest-box
+            </li>
+          </a>
+        
+      
+        
+          <li style="margin-left: 1.2rem;">
+            &nbsp;&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+            &nbsp;<a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/" style="color: orange; font-style: italic;">Nigiri</a>
+          </li>
+        
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/logs/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;Exploring the bitcoind logs
+            </li>
+          </a>
+        
+      
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/testnet/" style="font-weight: 400; font-size: 18px;">
+        Testnet
+      </a>
+    </li>
+          
+    
+  
+</ul>
+
+
+
+  
+  
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+        
+      
+    
+  
+
+  
+    <h2 id="toc1" style="margin-top: 2rem;">Table of Contents</h2>
+      <ul id="toc2">
+        
+          <li>
+            <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/#nigiri">
+              Nigiri
+            </a>
+          
+          <ul>        
+            
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/#architecture">
+                Architecture
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/#overview">
+                Overview
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/#logs">
+                Logs
+              </a>
+            </li>
+          
+      </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+        </nav>
+        
+        <main class="docs-content">
+          
+  <article>
+    <h1 id="nigiri">Nigiri</h1>
+<p><strong>In Short:</strong> Nigiri is a slightly more robust and involved piece of software than the bitcoin-regtest-box, and is easy to set up.<br />
+<strong>Repo:</strong> <a href="https://github.com/vulpemventures/nigiri">nigiri</a><br />
+<strong>Main Developer:</strong> <a href="https://vulpem.com/">Vulpem Ventures</a></p>
+<p>This page is very much a <em>work in progress</em>. Propose improvements <a href="https://github.com/thunderbiscuit/learn-bitcoin-testnet">here</a>.</p>
+<h2 id="architecture">Architecture</h2>
+<h2 id="overview">Overview</h2>
+<p>Nigiri is a series of docker containers that together form an ecosystem around a bitcoin regtest network. It provides a bitcoin daemon, an electrum Rust server, an Esplora block explorer web interface, and a Liquid daemon.</p>
+<p>See their <a href="https://github.com/vulpemventures/nigiri">readme</a> for how to set it up. You can either download the binaries ready to go at <a href="https://nigiri.vulpem.com/">nigiri.vulpem.com</a> or you can build them from source. Both are well explained.</p>
+<p>The first thing you need to do once you have nigiri installed is to start up the whole box:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">nigiri</span><span style="color:#c0c5ce;"> start
+
+</span><span style="color:#65737e;"># to stop it, you&#39;d use
+</span><span style="color:#c0c5ce;">nigiri stop
+</span></code></pre>
+<p>From there, a simple way to get started and play with the regtest in nigiri is to get inside the bitcoin node container and use bitcoin-cli directly (note that nigiri sets the RPC port at 19001 in the config file):</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># get inside the container
+</span><span style="color:#bf616a;">docker</span><span style="color:#c0c5ce;"> exec</span><span style="color:#bf616a;"> -it</span><span style="color:#c0c5ce;"> resources_bitcoin_1 bash
+
+</span><span style="color:#65737e;"># generate a new address
+</span><span style="color:#c0c5ce;">bitcoin-cli</span><span style="color:#bf616a;"> -datadir</span><span style="color:#c0c5ce;">=config getnewaddress
+</span></code></pre><h2 id="logs">Logs</h2>
+<p>You can access the logs for all containers and services using the following commands:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># bitcoind
+</span><span style="color:#bf616a;">nigiri</span><span style="color:#c0c5ce;"> logs node
+
+</span><span style="color:#65737e;"># electrs
+</span><span style="color:#c0c5ce;">nigiri logs electrs
+
+</span><span style="color:#65737e;"># chopsticks
+</span><span style="color:#c0c5ce;">nigiri logs chopsticks
+</span></code></pre><h3 id="configuration-file">Configuration File</h3>
+<p>Nigiri stores the <code>bitcoin.conf</code>  by default in the <code>~/.nigiri</code> data directory folder.
+To tweak your Bitcoin node configuration:</p>
+<ol>
+<li>Edit the <code>~/.nigiri/resources/volumes/regtest/config/bitcoin.conf</code> file</li>
+<li>If already started, stop and delete <code>nigiri stop --delete</code></li>
+<li>Start and mount inside the container the edited configuration file <code>nigiri start</code> </li>
+</ol>
+
+  </article>
+
+        </main>
+      </div>
+
+      <script type="text/javascript" src="https://thunderbiscuit.github.io/learn-bitcoin-testnet/js/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+
+          var y = document.getElementById("toc1");
+          if (y.style.display === "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          }
+
+          var z = document.getElementById("toc2");
+          if (z.style.display === "block") {
+            z.style.display = "none";
+          } else {
+            z.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

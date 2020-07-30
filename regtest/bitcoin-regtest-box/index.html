@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>Learn Bitcoin Testnet</title>
+      <!-- <link rel="icon" sizes="16x16" href="images/favicon.ico"> -->
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/fonts.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/styles.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/extra.css">
+    </head>
+
+    <body>
+      
+      <div class="docs-content-container">
+
+        <nav class="docs-sidebar">
+          <div id="subnav">
+            <form class="theme-selector" style="font-size: 2rem;">
+              <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9706;</button>
+              <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9705;</button>
+            </form>
+            <a href="/learn-bitcoin-testnet" style="margin-right: 1rem; font-size: 2rem;">&#8962;</a>
+            <a href="/learn-bitcoin-testnet/search" style="font-size: 2rem;">&#8981;</a>
+            <a href="javascript:void(0);" style="margin-left: 1rem; line-height: 50px;" onclick="burger()" id="mobile" style="font-size: 2rem;">&#9776;</a>
+          </div>
+          
+          
+  <ul id="breadcrumbs">
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;">Root</a>&nbsp;&#8594;&nbsp;</li>
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;regtest&#x2F;">Regtest</a>&nbsp;&#8594;&nbsp;</li>
+    
+    <li>bitcoin-regtest-box</li>
+    <hr style="width: 100%; color: #888888; margin: 0.2rem 0 1rem 0;"/>
+  </ul>
+
+  
+  
+
+<ul id="bger">
+  
+  
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/overview/" style="font-weight: 400; font-size: 18px;">
+        Overview
+      </a>
+    </li>
+          
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/" style="font-weight: 400; font-size: 18px;">
+        Regtest
+      </a>
+    </li>
+          
+    
+      
+        
+          <li style="margin-left: 1.2rem;">
+            &nbsp;&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+            &nbsp;<a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/" style="color: orange; font-style: italic;">bitcoin-regtest-box</a>
+          </li>
+        
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;Nigiri
+            </li>
+          </a>
+        
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/logs/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;Exploring the bitcoind logs
+            </li>
+          </a>
+        
+      
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/testnet/" style="font-weight: 400; font-size: 18px;">
+        Testnet
+      </a>
+    </li>
+          
+    
+  
+</ul>
+
+
+
+  
+  
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+  
+
+  
+    <h2 id="toc1" style="margin-top: 2rem;">Table of Contents</h2>
+      <ul id="toc2">
+        
+          <li>
+            <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/#bitcoin-regtest-box">
+              bitcoin-regtest-box
+            </a>
+          
+          <ul>        
+            
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/#architecture">
+                Architecture
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/#requirements">
+                Requirements
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/#fire-it-up">
+                Fire it up
+              </a>
+            </li>
+          
+            <li>
+              <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/#using-the-network">
+                Using the network
+              </a>
+            </li>
+          
+      </ul>
+  
+        </li>
+  
+      </ul>
+  
+
+        </nav>
+        
+        <main class="docs-content">
+          
+  <article>
+    <h1 id="bitcoin-regtest-box">bitcoin-regtest-box</h1>
+<p><strong>In Short:</strong> This project is one of the simplest ways to get a regtest network up and running.<br />
+<strong>Repo:</strong> <a href="https://github.com/bitcoindevkit/bitcoin-regtest-box">bitcoin-regtest-box</a><br />
+<strong>Main Developer:</strong> <a href="https://twitter.com/notmandatory">@notmandatory</a></p>
+<p>This page is very much a <em>work in progress</em>. Propose improvements <a href="https://github.com/thunderbiscuit/learn-bitcoin-testnet">here</a>.</p>
+<h2 id="architecture">Architecture</h2>
+<center>
+  <img src="/learn-bitcoin-testnet/images/regtest/bitcoin-regtest-box.png" style="width: 50vw; border: 2px solid #888888; border-radius: 8px;"/>
+</center>
+<p>The image created by docker is used to generate two node containers, together creating the regtest network.</p>
+<h2 id="requirements">Requirements</h2>
+<p>You'll need docker working on your machine. See our page on docker for more info on how to set it up if you need. The total size of the docker image is around 1GB. The following commands create two containers on your local machine, complete with all necessary software for running a bitcoin regtest network.</p>
+<h2 id="fire-it-up">Fire it up</h2>
+<p>You'll need to </p>
+<ol>
+<li>Clone the repo</li>
+<li>Create the image</li>
+<li>Fire up the containers</li>
+</ol>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># clone the repo and get in there
+</span><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone https://github.com/bitcoindevkit/bitcoin-regtest-box.git
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> bitcoin-regtest-box
+
+</span><span style="color:#65737e;"># create the image
+</span><span style="color:#c0c5ce;">docker-compose build
+
+</span><span style="color:#65737e;"># fire up the two containers
+</span><span style="color:#c0c5ce;">docker-compose up
+</span></code></pre><h2 id="using-the-network">Using the network</h2>
+<p>Once your containers are up, you can ssh into one of your nodes (containers) to access the bitcoin daemon and interact with the network.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">docker</span><span style="color:#c0c5ce;"> exec</span><span style="color:#bf616a;"> -it</span><span style="color:#c0c5ce;"> bitcoind_1 bash
+</span></code></pre>
+<p>From there you can use <code>bitcoin-cli</code> to speak with the daemon and send commands. Examples of this would be:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># get basic info on your chain
+</span><span style="color:#bf616a;">bitcoin-cli -regtest -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass getblockchaininfo
+
+</span><span style="color:#65737e;"># generate a new address from the node
+</span><span style="color:#c0c5ce;">bitcoin-cli</span><span style="color:#bf616a;"> -regtest -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass getnewaddress
+
+</span><span style="color:#65737e;"># mine 100 blocks and send their mining rewards to a given address
+</span><span style="color:#c0c5ce;">bitcoin-cli</span><span style="color:#bf616a;"> -regtest -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass generatetoaddress 100 &lt;newaddress&gt;
+
+</span><span style="color:#65737e;"># get info on your node&#39;s wallet
+</span><span style="color:#c0c5ce;">bitcoin-cli</span><span style="color:#bf616a;"> -regtest -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass getwalletinfo
+</span></code></pre>
+<p>If you do have bitcoin-cli installed on your machine, you can interact directly with the daemon in the container since it has opened its rpc port 18443.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">bitcoin-cli -chain</span><span style="color:#c0c5ce;">=regtest</span><span style="color:#bf616a;"> -rpcport</span><span style="color:#c0c5ce;">=18443</span><span style="color:#bf616a;"> -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass getblockchaininfo
+</span></code></pre>
+<p>Note that the usual way to tell the daemon is open to RPC communications on port 18443 is by taking a look at the <code>bitcoin.conf</code> file, which would in this case be in <code>/opt/bitcoin/regtest/</code>:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># log into container 1
+</span><span style="color:#bf616a;">docker</span><span style="color:#c0c5ce;"> exec</span><span style="color:#bf616a;"> -it</span><span style="color:#c0c5ce;"> bitcoind_1 bash
+
+</span><span style="color:#65737e;"># print contents of bitcoin.conf file to console
+</span><span style="color:#c0c5ce;">cat /opt/bitcoin/regtest/bitcoin.conf
+</span><span style="color:#65737e;"># file doesn&#39;t exist!
+</span></code></pre>
+<p>Turns out the file doesn't exist! In this case the port number if defined in the <code>docker-compose.yml</code> file, where the container starts and immediatly calls the bitcoin daemon with the following arguments: </p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">bitcoind -regtest -server -txindex</span><span style="color:#c0c5ce;">=0</span><span style="color:#bf616a;"> -prune</span><span style="color:#c0c5ce;">=0</span><span style="color:#bf616a;"> -blockfilterindex -peerblockfilters -fallbackfee</span><span style="color:#c0c5ce;">=0.0002</span><span style="color:#bf616a;"> -rpcallowip</span><span style="color:#c0c5ce;">=0.0.0.0/0</span><span style="color:#bf616a;"> -rpcbind</span><span style="color:#c0c5ce;">=0.0.0.0</span><span style="color:#bf616a;"> -addnode</span><span style="color:#c0c5ce;">=bitcoind_2:18444</span><span style="color:#bf616a;"> -rpcuser</span><span style="color:#c0c5ce;">=user</span><span style="color:#bf616a;"> -rpcpassword</span><span style="color:#c0c5ce;">=pass</span><span style="color:#bf616a;"> --datadir</span><span style="color:#c0c5ce;">=/opt/bitcoin
+</span></code></pre>
+<p>If you look at the logs that come up when starting the containers (right after running <code>docker-compose up</code>), you'll see that the daemon does not find any config files as it boots: </p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">timestamp</span><span style="color:#c0c5ce;"> Config file: /opt/bitcoin/bitcon.conf (not found, skipping)
+</span></code></pre>
+  </article>
+
+        </main>
+      </div>
+
+      <script type="text/javascript" src="https://thunderbiscuit.github.io/learn-bitcoin-testnet/js/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+
+          var y = document.getElementById("toc1");
+          if (y.style.display === "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          }
+
+          var z = document.getElementById("toc2");
+          if (z.style.display === "block") {
+            z.style.display = "none";
+          } else {
+            z.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>

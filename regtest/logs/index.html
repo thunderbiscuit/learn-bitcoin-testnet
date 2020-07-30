@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+      <title>Learn Bitcoin Testnet</title>
+      <!-- <link rel="icon" sizes="16x16" href="images/favicon.ico"> -->
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/fonts.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/styles.css">
+      <link rel="stylesheet" type="text/css" href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/css/extra.css">
+    </head>
+
+    <body>
+      
+      <div class="docs-content-container">
+
+        <nav class="docs-sidebar">
+          <div id="subnav">
+            <form class="theme-selector" style="font-size: 2rem;">
+              <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9706;</button>
+              <button type="button" id="theme-dark-button"  class="theme-button enabled" onclick="enableTheme('dark', true)" style="font-size: 2rem; padding-bottom: 4px;">&#9705;</button>
+            </form>
+            <a href="/learn-bitcoin-testnet" style="margin-right: 1rem; font-size: 2rem;">&#8962;</a>
+            <a href="/learn-bitcoin-testnet/search" style="font-size: 2rem;">&#8981;</a>
+            <a href="javascript:void(0);" style="margin-left: 1rem; line-height: 50px;" onclick="burger()" id="mobile" style="font-size: 2rem;">&#9776;</a>
+          </div>
+          
+          
+  <ul id="breadcrumbs">
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;">Root</a>&nbsp;&#8594;&nbsp;</li>
+    
+        
+          <li><a href="https:&#x2F;&#x2F;thunderbiscuit.github.io&#x2F;learn-bitcoin-testnet&#x2F;regtest&#x2F;">Regtest</a>&nbsp;&#8594;&nbsp;</li>
+    
+    <li>Exploring the bitcoind logs</li>
+    <hr style="width: 100%; color: #888888; margin: 0.2rem 0 1rem 0;"/>
+  </ul>
+
+  
+  
+
+<ul id="bger">
+  
+  
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/overview/" style="font-weight: 400; font-size: 18px;">
+        Overview
+      </a>
+    </li>
+          
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/" style="font-weight: 400; font-size: 18px;">
+        Regtest
+      </a>
+    </li>
+          
+    
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/bitcoin-regtest-box/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;bitcoin-regtest-box
+            </li>
+          </a>
+        
+      
+        
+          <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/nigiri/">
+            <li style="margin-left: 1.2rem;">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+              &nbsp;Nigiri
+            </li>
+          </a>
+        
+      
+        
+          <li style="margin-left: 1.2rem;">
+            &nbsp;&nbsp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AUDFDoqfmnPqQAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC6SURBVEjH7ZTBCcIwFIa/lO6hA7iA6BCO4AZe/xHeCF49C4I7VOfQk2PUS4QibUzahiL0h0AOj7x87wtx+JhZTWQkLYFnTG1Bj5jZBVjE1LpvAknux+F1CkkvgkazB7DJ0kDSHniZ2RFY5yA4SToAKzO7d5EUoVk3V0fZWdLO11dt4gc58Ll62a1OBr2igJ8tcBuLoO0S1Wdfpt40lTALQTNlYI5ujAbTEaT8riHi2cHs4B8dpM5+coI3MpVSlNj0qyUAAAAASUVORK5CYII=" width="16px" />
+            &nbsp;<a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/regtest/logs/" style="color: orange; font-style: italic;">Exploring the bitcoind logs</a>
+          </li>
+        
+      
+    
+  
+    
+
+    <li style="margin-top: 0.2rem; margin-bottom: 0.2rem;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px" />&nbsp;
+      <a href="https://thunderbiscuit.github.io/learn-bitcoin-testnet/testnet/" style="font-weight: 400; font-size: 18px;">
+        Testnet
+      </a>
+    </li>
+          
+    
+  
+</ul>
+
+
+
+  
+  
+    
+    
+      
+      
+    
+      
+      
+    
+  
+
+  
+
+        </nav>
+        
+        <main class="docs-content">
+          
+  <article>
+    <h1 id="understanding-the-bitcoind-logs">Understanding the bitcoind logs</h1>
+<p><em>This page is very much a work in progress. Propose improvements <a href="https://github.com/thunderbiscuit/learn-bitcoin-testnet">here</a>.</em></p>
+<p>If you've fired up a bitcon daemon, you're familiar with the experience of seeing a few hundred lines being printed on your console at breakneck speed, and most likely you're also familiar with not paying much attention to them. This article delves into a lot of those lines and attempts to remove the veil on them.</p>
+<h2 id="a-typical-log-entry">A typical log entry</h2>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">2020-07-24T20:28:38Z</span><span style="color:#c0c5ce;"> Bitcoin Core version v0.19.1 (release build)
+</span></code></pre>
+<p>The daemon logs are both printed to the console and saved in a file called <code>debug.log</code> located in your root <code>/regtest/</code> directory. They have two parts: a timestamp and a message.</p>
+<h2 id="common-log-messages">Common log messages</h2>
+<p><code>Bitcoin Core version v0.19.1 (release build)</code></p>
+<p>This states the software version of the daemon.</p>
+<br />
+<p><code>Config file: /config/bitcoin.conf</code></p>
+<p>This line is very important, as many-a-developer has been caught making changes to the wrong config file. If you've made changes to the config file and are not sure why your daemon doesn't seem to be applying them, check to see that it is using the right config file!</p>
+<br />
+<p><code>Using wallet directory /config/regtest/wallets</code></p>
+<p>Again, a simple line letting you know the location of the wallets directory.</p>
+
+  </article>
+
+        </main>
+      </div>
+
+      <script type="text/javascript" src="https://thunderbiscuit.github.io/learn-bitcoin-testnet/js/themes.js"></script>
+
+      <script>
+        function burger() {
+          var x = document.getElementById("bger");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+
+          var y = document.getElementById("toc1");
+          if (y.style.display === "block") {
+            y.style.display = "none";
+          } else {
+            y.style.display = "block";
+          }
+
+          var z = document.getElementById("toc2");
+          if (z.style.display === "block") {
+            z.style.display = "none";
+          } else {
+            z.style.display = "block";
+          }
+        }
+        </script>
+    </body>
+</html>
