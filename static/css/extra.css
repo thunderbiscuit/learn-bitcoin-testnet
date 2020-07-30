@@ -110,16 +110,6 @@ article li {
   border-radius: 0 7px 7px 0;
 }
 
-/* wrap text in code blocks */
-pre {
-  /* css-3 */
-  /* white-space: pre-wrap; */
-  /* Mozilla, since 1999 */
-  /* white-space: -moz-pre- wrap; */
-  /* Internet Explorer 5.5+ */
-  /* word-wrap: break-word; */
-}
-
 blockquote {
   color: #999;
   border-left: .2rem solid #dfe2e5;
@@ -127,13 +117,16 @@ blockquote {
   padding: 0.25rem 0rem 0.25rem 1rem;
 }
 
-
 article a {
   font-weight: 400;
 }
 
 strong {
   font-weight: 700;
+}
+
+pre {
+  margin-bottom: 2rem;
 }
 
 :not(pre) > code {

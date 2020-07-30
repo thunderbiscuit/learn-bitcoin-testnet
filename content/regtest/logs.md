@@ -1,12 +1,12 @@
 +++
-title = "exploring bitcoind logs"
+title = "Exploring the bitcoind logs"
 template = "page.html"
 weight = 3
 +++
 
 # Understanding the bitcoind Logs
 
-This page is very much a _work in progress_. Propose improvements [here](https://github.com/thunderbiscuit/learn-bitcoin-testnet).
+_This page is very much a work in progress. Propose improvements [here](https://github.com/thunderbiscuit/learn-bitcoin-testnet)._
 
 If you've fired up a bitcon daemon, you're familiar with the experience of seeing a few hundred lines being printed on your console at breakneck speed, and most likely you're also familiar with not paying much attention to them. This article delves into a lot of those lines and attempts to remove the veil on them.
 
@@ -29,6 +29,8 @@ This states the software version of the daemon.
 `Config file: /config/bitcoin.conf`
 
 This line is very important, as many-a-developer has been caught making changes to the wrong config file. If you've made changes to the config file and are not sure why your daemon doesn't seem to be applying them, check to see that it is using the right config file!
+
+<br />
 
 `Using wallet directory /config/regtest/wallets`
 
